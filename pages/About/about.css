@@ -1,0 +1,32 @@
+#team_cards {
+  grid-template-columns repeat(3, 1fr);
+  gap 1em;
+}
+
+.card {
+  padding 1em;
+  border-radius 5px;
+  border 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.card img {
+  border-radius 5px;
+}
+
+.card h5 {
+  color var(--title-color);
+  font-weight var(--font-semi-bold);
+  font-size var(--h3-font-size);
+}
+
+@media screen and (max-width 768px) {
+  #team_cards {
+    grid-template-columns repeat(2, 1fr);
+  }
+}
+
+@media screen and (max-width 576px) {
+  #team_cards {
+    grid-template-columns 1fr;
+  }
+}

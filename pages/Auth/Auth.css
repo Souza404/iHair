@@ -1,0 +1,56 @@
+section {
+  min-height: 80vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+input {
+  background: transparent;
+}
+
+#register h2,
+#register p,
+#registerBusiness h2,
+#registerBusiness p,
+#generated-password h4,
+#login h2,
+#login p {
+  text-align: center;
+}
+
+h2 {
+  font-size: var(--big-font-size);
+}
+
+form {
+  width: 100%;
+  max-width: 440px;
+}
+
+#register > p,
+#registerBusiness > p,
+#login > p,
+form > p,
+#generated-password {
+  margin-bottom: var(--mb-1);
+}
+
+#generate-password,
+#login p > a,
+#registerBusiness p > a,
+#register p > a {
+  cursor: pointer;
+  color: var(--title-color-red);
+  font-weight: var(--font-medium);
+}
+
+#generated-password {
+  display: none;
+}
+
+#generated-password h4 {
+  color: var(--title-color-dark);
+  font-size: var(--h2-font-size);
+}

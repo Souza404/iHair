@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="../../index.css" />
+    <link rel="stylesheet" href="../../components/navbar.css" />
+    <link rel="stylesheet" href="../../components/footer.css" />
+    <link rel="stylesheet" href="Auth.css" />
+    <script type="module" src="../../components/navbar.js" defer></script>
+    <script type="module" src="register.js" defer></script>
+    <script src="generatePassword.js" defer></script>
+    <link rel="shortcut icon" href="../../assets/iH.ico" type="image/x-icon" />
+    <title>iHair - Cadastre-se</title>
+  </head>
+  <body>
+    <header class="header">
+      <nav class="navbar container">
+        <a href="#" id="home"><img src="../../assets/logo.png" alt="logo" /></a>
+        <ul class="nav_menu"></ul>
+        <div id="hamburguer-menu">
+          <div class="item1"></div>
+          <div class="item2"></div>
+          <div class="item3"></div>
+        </div>
+      </nav>
+    </header>
+    <section class="section container" id="register">
+      <h2>Crie sua conta</h2>
+      <p>Registre-se para utilizar nossas funcionalidades</p>
+      <form>
+        <input type="text" id="name" placeholder="Digite seu nome" required />
+        <input
+          type="email"
+          id="email"
+          placeholder="Digite seu melhor e-mail"
+          required
+        />
+        <input
+          type="password"
+          name="password"
+          id="password"
+          placeholder="Digite sua senha"
+          required
+        />
+        <p>
+          Quer ajuda para criar uma senha segura?
+          <span id="generate-password">Clique aqui.</span>
+        </p>
+        <div id="generated-password">
+          <p>Aqui está sua senha:</p>
+          <h4></h4>
+        </div>
+        <input
+          type="password"
+          name="confirmPassword"
+          id="confirmPassword"
+          placeholder="Confirme a sua senha"
+          required
+        />
+        <input type="submit" value="Cadastrar" id="submit" />
+      </form>
+      <p>Já tem uma conta? <a href="login.html">Entrar</a></p>
+    </section>
+    <footer class="container">
+      <div>
+        <div class="col">
+          <h3>Metódos de Pagamento</h3>
+          <div>
+            <i class="fa-brands fa-cc-visa fa-2x"></i>
+            <i class="fa-brands fa-cc-mastercard fa-2x"></i>
+            <i class="fa-brands fa-cc-discover fa-2x"></i>
+          </div>
+          <div>
+            <i class="fa-brands fa-cc-amex fa-2x"></i>
+            <i class="fa-brands fa-cc-paypal fa-2x"></i>
+          </div>
+          <div>
+            <i class="fa-brands fa-cc-apple-pay fa-2x"></i>
+            <i class="fa-brands fa-cc-amazon-pay fa-2x"></i>
+          </div>
+        </div>
+        <div class="col">
+          <h3>Links</h3>
+          <ul>
+            <li><a href="#">Ajuda</a></li>
+            <li><a href="#">Política de vendas</a></li>
+            <li><a href="#">Cancelamentos e estorno</a></li>
+            <li><a href="#">FAQ</a></li>
+            <li><a href="#">Política e privacidade</a></li>
+            <li><a href="#">Disclaimer</a></li>
+          </ul>
+        </div>
+        <div class="col">
+          <h3>Redes Sociais</h3>
+          <div>
+            <div>
+              <a href="#"><i class="fa-brands fa-facebook fa-2x"></i></a>
+              <a href="#"><i class="fa-brands fa-twitter fa-2x"></i></a>
+              <a href="#"><i class="fa-brands fa-instagram fa-2x"></i></a>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <h3>Contate-nos</h3>
+          <p>
+            R. do Rosário 1081<br />
+            Angola, Betim - MG <br />
+            32604-115
+          </p>
+          <div>
+            <i class="fa-solid fa-envelope fa-1x"></i>
+            <a href="#">ihair@gmail.com</a>
+          </div>
+          <div>
+            <h3>
+              <span><i class="fa-solid fa-phone"></i></span> 31 94002-8922
+            </h3>
+          </div>
+        </div>
+      </div>
+      <p>iHair &copy; 2023</p>
+    </footer>
+  </body>
+</html>
